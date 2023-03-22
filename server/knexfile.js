@@ -8,6 +8,7 @@ module.exports = {
     password: process.env.MYSQL_PASSWORD,
     database: process.env.MYSQL_DATABASE
   },
+  pool: { min: 0, max: 7 },
   migrations: {
     directory: resolve(__dirname, 'src', 'database', 'migrations')
   },
@@ -15,3 +16,4 @@ module.exports = {
     directory: resolve(__dirname, 'src', 'database', 'seeds')
   }
 }
+
